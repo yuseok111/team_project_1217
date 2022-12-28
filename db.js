@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 const { connect } = require("./app");
 var connection = mysql.createConnection({
-  host: "127.0.0.1",
+  host: "database-2.c8v9aygdaryr.ap-northeast-1.rds.amazonaws.com",
   user: "root",
-  password: "1234",
+  password: "525252",
   database: "team_bogo",
   dateStrings: "date",
   multipleStatements: true,
