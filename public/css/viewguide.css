@@ -1,0 +1,278 @@
+.viewguide_main h2{
+  text-align: center;
+}
+.viewguide_main h3{
+  font-size: 28px;
+}
+/* br태그 */
+.admission_fee_br{
+  display: none;
+}
+/* 관람시간 휴관일 단체관람 */
+.view_category{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.view_category>div{
+  width: calc(33.3333% - 30px);
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+.view_category h3{
+  line-height: 50px;
+  color: #fff;
+  background-color: #073871;
+}
+.view_category ul{
+  padding: 30px 0;
+}
+.first_list{
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.view_notice_txt_list{
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.view_notice_txt_list>span{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-image: url(../img/error_icon.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 입장요금 */
+.admission_fee_wrap h3{
+  margin: 40px 0;
+}
+.admission_fee_table{
+  width: 100%;
+}
+/* 테이블 헤드 */
+.admission_fee_table thead tr{
+  border: 1px solid;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+.admission_fee_table thead th{
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100px;
+  vertical-align: middle;
+}
+.admission_fee_table thead .admission_fee_second_tr th:first-child{
+  width: 200px;
+}
+.admission_fee_table thead .admission_fee_second_tr th:last-child{
+  width: 280px;
+}
+/* 테이블 바디 */
+.admission_fee_table tbody tr{
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.admission_fee_table tbody td{
+  font-size: 18px;
+  border: 1px solid;
+  box-sizing: border-box;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+.admission_fee_table tbody .admission_fee_second_tr td:nth-child(3){
+  width: 200px;
+}
+.admission_fee_table tbody .admission_fee_second_tr td:nth-child(4){
+  width: 280px;
+}
+
+/* 입장요금 안내사항 */
+.admission_fee_guide{
+  margin-top: 40px;
+}
+.admission_fee_guide p{
+  font-size: 18px;
+  color: #777;
+}
+.admission_fee_guide p:nth-child(2){
+  margin: 20px 0;
+}
+/* 관람시 유의사항 */
+.viewing_notice_wrap{
+  margin-top: 60px;
+}
+.viewing_notice_wrap h3{
+  margin-bottom: 40px;
+}
+.viewing_notice_list li{
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+.viewing_notice_list li:last-child{
+  margin-bottom: 0px;
+}
+
+
+
+/* 미디어쿼리 */
+@media (max-width:1440px){
+  /* 관람시간 휴관일 단체관람 */
+  .view_category>div{
+    width: calc(33.3333% - 10px);
+  }
+}
+@media (max-width:1024px){
+  .viewguide_main h3{
+    font-size: 25px;
+  }
+  .first_list{
+    font-size: 16px;
+  }
+  /* 테이블 헤드 */
+  .admission_fee_table thead th{
+    font-size: 22px;
+    height: 75px;
+  }
+  /* 테이블 바디 */
+  .admission_fee_table tbody td{
+    font-size: 16px;
+    height: 75px;
+  }
+  /* 입장요금 안내사항 */
+  .admission_fee_guide p{
+    font-size: 16px;
+  }
+  /* 관람시 유의사항 */
+  .viewing_notice_list li{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:768px){
+  /* br태그 */
+  .admission_fee_br{
+    display: block;
+  }
+  .viewguide_main h3{
+    font-size: 20px;
+  }
+  /* 관람시간 휴관일 단체관람 */
+  .view_notice_txt_list>span{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  /* 입장요금 */
+  .admission_fee_wrap h3{
+  margin: 30px 0;
+  }
+  /* 테이블 헤드 */
+  .admission_fee_table thead th{
+    font-size: 20px;
+  }
+  /* 입장요금 안내사항 */
+  .admission_fee_guide{
+  margin-top: 30px;
+  }
+  .admission_fee_guide p{
+    font-size: 16px;
+  }
+   /* 관람시 유의사항 */
+  .viewing_notice_wrap{
+    margin-top: 30px;
+  }
+  .viewing_notice_wrap h3{
+    margin-bottom: 30px;
+  }
+  .viewing_notice_list li{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:690px){
+  .viewguide_main h3{
+    font-size: 16px;
+  }
+   /* 관람시간 휴관일 단체관람 */
+  .view_category>div{
+    width: 100%;
+  }
+  .view_closed{
+    margin: 20px 0;
+  }
+  .view_category h3{
+    line-height: 40px;
+  }
+  .view_category ul{
+    padding: 20px 0;
+  }
+  .first_list{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .view_notice_txt_list{
+    font-size: 12px;
+  }
+
+  /* 입장요금 */
+  .admission_fee_wrap h3{
+    margin: 20px 0;
+  }
+  /* 테이블 헤드 */
+  .admission_fee_table thead th{
+    font-size: 16px;
+    height: 50px;
+  }
+  /* 테이블 바디 */
+  .admission_fee_table tbody td{
+    font-size: 14px;
+    height: 50px;
+  }
+  /* 입장요금 안내사항 */
+  .admission_fee_guide{
+    margin-top: 20px;
+  }
+  .admission_fee_guide p{
+    font-size: 14px;
+  }
+  .admission_fee_guide p:nth-child(2){
+    margin: 10px 0;
+  }
+  /* 관람시 유의사항 */
+  .viewing_notice_wrap{
+    margin-top: 20px;
+  }
+  .viewing_notice_wrap h3{
+    margin-bottom: 20px;
+  }
+  .viewing_notice_list li{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* 추가 */
+  .admission_fee_none{
+    display: none;
+  }
+}
+
+
+@media (max-width:430px){
+    /* 테이블 헤드 */
+    .admission_fee_table thead th{
+      height: 40px;
+    }
+}

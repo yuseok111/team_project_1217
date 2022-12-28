@@ -1,0 +1,12 @@
+테이블명 team_bogo
+
+CREATE TABLE bogo_collection(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+    create_time DATE COMMENT 'Create Time',
+    img blob(65535) COMMENT 'img',
+    title VARCHAR(255) COMMENT 'title',
+    writer VARCHAR(255) COMMENT 'writer',
+    collection_year int COMMENT 'collection_year',
+    collection_cont mediumtext COMMENT 'collection_cont'
+) COMMENT '';
+ 

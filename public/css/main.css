@@ -1,0 +1,843 @@
+/* 메인1 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 50px;
+  height: 5px;
+  background-color: #d9d9d9;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  padding: 0 10px;
+} */
+
+.swiper-button-disabled {
+  opacity: 1 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: block;
+  color: #000;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+  display: none;
+}
+
+img.m-main1 {
+  display: none;
+}
+
+/* 메인2 */
+.main2-txt-wrap {
+  overflow-x: hidden;
+}
+.main2-txt {
+  width: 100%;
+  font-size: 10vw;
+  font-weight: bold;
+  color: #073871;
+}
+
+.main2-m-txt {
+  display: none;
+  width: 100%;
+  font-size: 6.8vw;
+  /* 기존 폰트사이즈 50이였는데 45로 줄임*/
+  font-weight: bold;
+  color: #073871;
+  text-align: center;
+}
+
+/* 메인 3 */
+/* 관람시간 관람요금 */
+.main3_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main3_list_text {
+  width: 70%;
+  /* background-color: tomato; */
+}
+.main3_list_wrap {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.main3_list_wrap h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.main3_list_wrap > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main3_list_wrap > ul > li {
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 30px;
+}
+.main3_list_wrap > ul > li > b {
+  font-size: 18px;
+  font-weight: bold;
+}
+.main3_list_wrap > ul > li:last-child {
+  margin-right: 0px;
+}
+
+/* 관람문의전화 모바일 배너 */
+.main3_mobile_icon {
+  display: none;
+}
+
+.main3_mobile_icon img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+/*  관람문의전화 배너 */
+.main3_list_banner {
+  width: 30%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.main3_list_banner a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.main3_list_banner a img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* main3_icons */
+.main3_icons {
+  margin: 40px 0;
+  /* background-color: skyblue; */
+}
+
+.main3_icons ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main3_icons ul li {
+  width: 16.6666%;
+  height: auto;
+  text-align: center;
+}
+
+.main3_icon {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto 20px;
+}
+
+.main3_icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main3_icon1 {
+  background-image: url(../img/collection_icon.png);
+}
+
+.main3_icon2 {
+  background-image: url(../img/facility_icon.png);
+}
+
+.main3_icon3 {
+  background-image: url(../img/guide_icon.png);
+}
+
+.main3_icon4 {
+  background-image: url(../img/education_icon.png);
+}
+
+.main3_icon5 {
+  background-image: url(../img/reservation_icon.png);
+}
+
+.main3_icon6 {
+  background-image: url(../img/waytocome.png);
+}
+/* main3_icons */
+.main3_icon_txt a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+/* 메인4 전시 */
+.main4_wrap h2 {
+  margin: 40px 0;
+}
+
+/* 스와이퍼 */
+.exhibitionSwiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.exhibitionSwiper > .swiper-wrapper > .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  /* 1211 추가한것 */
+  flex-direction: column;
+}
+.silde_arrow {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+.silde_arrow > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.silde_arrow li {
+  font-size: 18px;
+  font-weight: 700;
+  /* 1228 */
+  width: 100%;
+}
+.exhibition_pagination {
+  /* width: 34px; /
+  / 1228 /
+  width: 100%;
+  / 1228 */
+  position: relative;
+  bottom: 0;
+  font-size: 0 !important;
+}
+.exhibition_pagination > span {
+  font-size: 16px;
+}
+.swiper-pagination-total {
+  margin-left: 14px;
+  position: relative;
+}
+.swiper-pagination-total::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #000;
+}
+.silde_arrow a {
+  display: block;
+  width: 32px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7px auto;
+}
+.slide_prev {
+  background-image: url(../img/left.png);
+}
+.slide_next {
+  background-image: url(../img/right.png);
+}
+/* main4 img */
+.exhibition_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.exhibition_img > a {
+  display: block;
+  padding-top: 138.7387%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.exhibition_img1 {
+  background-image: url(../img/bar1.jpg);
+}
+.exhibition_img2 {
+  background-image: url(../img/bar2.jpg);
+}
+.exhibition_img3 {
+  background-image: url(../img/bar3.jpg);
+}
+.exhibition_img4 {
+  background-image: url(../img/bar4.jpg);
+}
+.exhibition_img5 {
+  background-image: url(../img/bar5.jpg);
+}
+.exhibition_img6 {
+  background-image: url(../img/bar6.jpg);
+}
+.exhibition_img7 {
+  background-image: url(../img/bar7.jpg);
+}
+.exhibition_img8 {
+  background-image: url(../img/bar8.jpg);
+}
+/* main4 txt */
+.exhibition_txt_wrap {
+  width: 100%;
+  margin-top: 30px;
+}
+/* 전시버튼 */
+.exhibition_btn h4 {
+  display: inline-block;
+  width: 90px;
+  line-height: 30px;
+  border: 1px solid #000;
+  font-size: 18px;
+  text-align: center;
+}
+.now_exhibition {
+  background-color: #073871;
+  color: #fff;
+}
+.expected_exhibition {
+  margin: 0 10px;
+}
+/* 전시제목 */
+.exhibition_title {
+  font-size: 18px;
+  margin: 20px 0;
+}
+/* 전시날짜 */
+.exhibition_day {
+  color: #777;
+}
+
+/* 메인 5 알립니다 */
+.main5_wrap h2 {
+  margin-bottom: 40px;
+}
+
+.main5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 탭파트 */
+.main5_notice_tap_wrap {
+  width: calc(50% - 15px);
+}
+
+/* 탭 메뉴 */
+.notice_tablist {
+  display: flex;
+}
+
+.notice_tablink {
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+  line-height: 70px;
+  cursor: pointer;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.notice_tab_active {
+  background-color: #073871;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+/* 탭 리스트 */
+.notice_tabcont {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box;
+}
+
+#notice_tab2,
+#notice_tab3 {
+  display: none;
+}
+
+.notice_tabcont_list_inner_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 80px;
+}
+
+.notice_tabcont_list_inner_box > a {
+  display: block;
+  width: 60%;
+  margin-left: 10px;
+  color: #000;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notice_tabcont_list_inner_box span a {
+  display: block;
+  width: 40%;
+  color: #777;
+}
+
+/* 배너 파트 */
+.main5_notice_banner_wrap {
+  width: calc(50% - 15px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_notice_banner {
+  width: 100%;
+  height: calc(50% - 15px);
+  box-sizing: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_notice_banner1 {
+  background-image: url(../img/main_notice_banner1.png);
+}
+
+.main_notice_banner2 {
+  background-image: url(../img/main_notice_banner3.png);
+}
+
+/* 메인6 소장품 */
+.main6_wrap h2 {
+  margin-bottom: 40px;
+}
+.main6_collection_wrap {
+  background-color: #eee;
+}
+
+/* 메인6 스크롤 스와이퍼 */
+.main6_collection {
+  width: 100%;
+  height: 100%;
+}
+.main6_collection > .swiper-wrapper {
+  align-items: center;
+}
+.main6_collection > .swiper-wrapper > .swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main6_collection > .swiper-wrapper > .swiper-slide > a {
+  display: block;
+  width: 100%;
+  margin-right: 30px;
+}
+.main6_collection > .swiper-wrapper > .swiper-slide > a > img {
+  width: 100%;
+  height: auto;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1440px) {
+  /* 메인 3 */
+  /* 관람시간 관람요금 */
+  .main3_list_text {
+    width: 100%;
+  }
+
+  /* 관람문의전화 모바일 배너 */
+  .main3_mobile_icon {
+    display: block;
+  }
+
+  /*  관람문의전화 배너 */
+  .main3_list_banner {
+    display: none;
+  }
+
+  /* 메인 4 */
+  /* 전시제목 */
+  .exhibition_title p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* 메인1 스와이퍼*/
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    display: none;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+
+  /* 메인3 */
+  /* 관람시간 관람요금 */
+  .main3_list_wrap h3 {
+    font-size: 28px;
+  }
+  .main3_list_wrap > ul > li {
+    font-size: 15px;
+  }
+  .main3_list_wrap > ul > li > b {
+    font-size: 16px;
+  }
+
+  .main3_icon_txt a {
+    font-size: 20px;
+  }
+
+  /* 메인 4 */
+  /* 전시버튼 */
+  .exhibition_btn h4 {
+    font-size: 16px;
+  }
+  /* 전시제목 */
+  .exhibition_title {
+    font-size: 16px;
+  }
+  /* 전시날짜 */
+  .exhibition_day {
+    font-size: 15px;
+  }
+
+  /* 메인 5 알립니다 */
+  /* 탭파트 */
+  .main5_notice_tap_wrap {
+    width: calc(50% - 10px);
+  }
+
+  /* 탭 메뉴 */
+  .notice_tablink {
+    font-size: 25px;
+  }
+
+  /* 탭리스트 */
+  .notice_tabcont_list_inner_box > a {
+    font-size: 16px;
+  }
+
+  .notice_tabcont_list_inner_box span a {
+    font-size: 15px;
+  }
+}
+/* 1211 메인4만 991따로 잡음 */
+@media (max-width: 991px) {
+  /* 전시버튼 */
+  .extension_exhibition {
+    display: none !important;
+  }
+}
+/* 1211 메인3만 800따로 잡음 */
+@media (max-width: 800px) {
+  /* 메인3 */
+  /* 관람시간 관람요금 */
+  .main3_list_wrap {
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  .main3_list_wrap h3 {
+    font-size: 25px;
+  }
+  .main3_list_wrap > ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main3_list_wrap > ul > li {
+    font-size: 14px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  /* main3_icons */
+  .main3_icons {
+    margin: 20px 0;
+  }
+
+  .main3_icons ul li {
+    width: 33.3333%;
+    margin-bottom: 10px;
+  }
+
+  .main3_icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+
+  .main3_icon_txt a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  /* 메인1 스와이퍼 */
+  img.m-main1 {
+    display: block;
+  }
+
+  img.main1 {
+    display: none;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  /* 메인2 */
+  .main2-txt {
+    display: none;
+  }
+
+  .main2-m-txt {
+    display: block;
+    margin: 20px 0;
+  }
+
+  /* 메인 4 */
+  /* 메인4 전시 */
+  .main4_wrap h2 {
+    margin: 20px 0;
+  }
+  /* 전시제목 */
+  .exhibition_title {
+    margin: 10px 0;
+  }
+  /* 전시날짜 */
+  .exhibition_day {
+    font-size: 14px;
+  }
+  /* 메인4 스와이퍼 버튼 */
+  .silde_arrow {
+    top: 30px;
+  }
+
+  /* 메인 5 알립니다 */
+  .main5_wrap h2 {
+    margin-bottom: 20px;
+  }
+
+  /* 탭파트 */
+  .main5_notice_tap_wrap {
+    width: 100%;
+  }
+
+  /* 탭 메뉴 */
+  .notice_tablink {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  /* 탭 리스트 */
+  .notice_tabcont {
+    border-bottom: 0;
+  }
+
+  .notice_tabcont_list_inner_box {
+    line-height: 60px;
+    border-bottom: 1px solid #777;
+    box-sizing: border-box;
+  }
+
+  .notice_tabcont_list_inner_box span a {
+    font-size: 14px;
+  }
+
+  /* 배너 파트 */
+  .main5_notice_banner_wrap {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .main_notice_banner {
+    width: 100%;
+    height: 250px;
+  }
+
+  .main_notice_banner1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  /* 메인2 */
+  .main2-m-txt {
+    margin: 10px 0;
+  }
+  /* 메인3 */
+  /* 관람시간 관람요금 */
+  .main3_list_wrap {
+    margin-bottom: 10px;
+  }
+  .main3_list_wrap h3 {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .main3_list_wrap > ul > li {
+    font-size: 12px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .main3_list_wrap > ul > li > b {
+    font-size: 14px;
+  }
+  /* 관람문의전화 모바일 배너 */
+  .main3_mobile_icon img {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+  /* main3_icons */
+  .main3_icons {
+    margin: 10px 0;
+  }
+  .main3_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .main3_icon_txt a {
+    font-size: 15px;
+  }
+  /* 메인 4 */
+  /* 메인4 스와이퍼 버튼 */
+  .silde_arrow {
+    top: 25px;
+  }
+  /* main4 img */
+  .exhibition_img > a {
+    width: 222px;
+    height: 308px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  /* main4 txt */
+  .exhibition_txt_wrap {
+    text-align: center;
+  }
+  /* 전시버튼 */
+  .exhibition_btn h4 {
+    font-size: 14px;
+  }
+  /* 전시제목 */
+  .exhibition_title {
+    font-size: 14px;
+  }
+  /* 전시날짜 */
+  .exhibition_day {
+    font-size: 12px;
+  }
+
+  /* 메인 5 알립니다 */
+  /* 탭 메뉴 */
+  .notice_tablink {
+    font-size: 16px;
+  }
+
+  /* 탭리스트 */
+  .notice_tabcont_list_inner_box {
+    line-height: 50px;
+  }
+
+  .notice_tabcont_list_inner_box > a {
+    font-size: 14px;
+  }
+
+  .notice_tabcont_list_inner_box span a {
+    font-size: 12px;
+  }
+
+  /* 배너 파트 */
+  .main_notice_banner {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  /* 관람시간 관람요금 */
+  .main3_list_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .main3_list_wrap h3 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .main3_mobile_icon img {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+<!-- 소장품 -->
+<section class="collection_view_main w1440 pb120">
+  <h2 class="pt120 pb120">소장품</h2>
+  <!-- 갤러리 뷰어 -->
+  <div class="collection_view_gallery_wrap">
+    <!-- 갤러리 뷰어 이미지 영역 -->
+    <div class="collection_view_gallery">
+      <img src="<%= row.img %>" alt="gall"></img>
+    </div>
+    <!-- 갤러리 뷰어 텍스트 영역 -->
+    <ul class="collection_view_gallery_txt">
+      <li><p>제목</p><%= row.title %></li>
+      <li><p>작가명</p><%= row.writer %></li>
+      <li><p>제작연도</p><%= row.collection_year %></li>
+      <li><p>내용</p><%= row.collection_cont %></li>
+      <!-- 수정 삭제버튼 -->
+      <div class="collection_view_btns">
+        <button type="button" class="collection_view_emend_btn" onclick="javascript:location.href='/updatecollec?id=<%= row.id %>'">수정</button>
+        <button type="button" class="collection_view_delete_btn" onclick="javascript:location.href='/deletecollec?id=<%= row.id %>'">삭제</button>
+        <button type="button" class="collection_view_list_btn" onclick="javascript:location.href='/collection'">목록</button>
+      </div>
+    </ul>
+  </div>
+  <div id="topBtn">TOP</div>
+</section>
+<script src="js/collection_view.js"></script>

@@ -1,0 +1,191 @@
+.map_main h2{
+  text-align: center;
+}
+/* 지도 영역 */
+.map_wrap iframe{
+  width: 100%;
+  height: 700px;
+}
+/* 주소, 전화 */
+.map_addr{
+  margin: 40px auto 60px;
+  display: flex;
+  align-items: center;
+  /* 추가 */
+  position: relative;
+  top:50px; left: 0;
+  opacity: 0;
+}
+.map_addr li{
+  margin-right: 10%;
+}
+.map_addr li:last-child{
+  margin-right: 0;
+}
+.map_addr li p{
+  display: inline-block;
+}
+.map_addr li p:first-child{
+  font-size: 22px;
+  font-weight: bold;
+}
+.map_addr li p:last-child{
+  font-size: 18px;
+}
+/* 교통 안내 */
+/* js */
+.traffic_infor_wrap{
+  position: relative;
+  top:50px; left: 0;
+  opacity: 0;
+}
+.traffic_infor{
+  border-top: 1px solid;
+  padding: 60px 50px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.traffic_icon{
+  width: 124px;
+}
+.traffic_icon img{
+  display: block;
+  width: 100%;
+}
+.traffic_text{
+  width: calc(100% - 174px);
+}
+.traffic_text h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.traffic_text li{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.traffic_text li:last-child{
+  margin-bottom: 0px;
+}
+.traffic_text li.b_60{
+  margin-bottom: 60px;
+}
+.traffic_text li span{
+  font-size: 16px;
+  color: #777;
+}
+
+/* 미디어쿼리 */
+@media (max-width:1024px){
+  /* 주소, 전화 */
+  .map_addr li p:first-child{
+    font-size: 20px;
+  }
+  .map_addr li p:last-child{
+    font-size: 16px;
+  }
+  /* 교통안내 */
+  .traffic_text h3{
+    font-size: 28px;
+  }
+  .traffic_text li{
+    font-size: 16px;
+  }
+  .traffic_text li span{
+    font-size: 15px;
+  }
+}
+@media (max-width:768px){
+  /* 지도 영역 */
+  .map_wrap iframe{
+    height: 360px;
+  }
+  /* 주소, 전화 */
+  .map_addr{
+    margin: 20px auto 30px;
+  }
+   /* 주소, 전화 */
+  .map_addr li p:first-child{
+    font-size: 18px;
+  }
+  /* 교통 안내 */
+  .traffic_infor{
+    padding: 30px 25px 0;
+    align-items: flex-start;
+  }
+  .traffic_icon{
+    width: 100px;
+  }
+  .traffic_text{
+    width: calc(100% - 125px);
+  }
+  .traffic_text h3{
+    font-size: 25px;
+  }
+  .traffic_text li.b_60{
+    margin-bottom: 30px;
+  }
+  .traffic_text li span{
+    font-size: 14px;
+  }
+}
+@media (max-width:690px){
+  /* 주소, 전화 */
+  .map_addr{
+    margin: 10px auto 20px;
+  }
+  .map_addr li p:first-child{
+  font-size: 15px;
+  }
+  .map_addr li p:last-child{
+    font-size: 14px;
+  }
+  /* 교통안내 */
+  .traffic_infor{
+    padding: 20px 20px 0;
+    align-items: flex-start;
+  }
+  .traffic_icon{
+    width: 80px;
+  }
+  .traffic_text{
+    width: calc(100% - 100px);
+  }
+  .traffic_text h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .traffic_text li{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .traffic_text li.b_60{
+    margin-bottom: 20px;
+  }
+  .traffic_text li span{
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width:430px){
+  /* 주소, 전화 */
+  .map_addr{
+    flex-wrap: wrap;
+  }
+  .map_addr li{
+    width: 100%;
+  }
+  .map_addr li:first-child{
+    margin-bottom: 10px;
+  }
+  /* 교통 안내 */
+  .traffic_icon{
+    display: none;
+  }
+  .traffic_text{
+    width: 100%;
+  }
+}

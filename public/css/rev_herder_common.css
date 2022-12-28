@@ -1,0 +1,212 @@
+
+/* /// 메인 상세페이지헤더 */
+.rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_head {
+    display: flex;
+    border: 1px solid;
+    line-height: 70px;
+  }
+  .online {
+    width: 50%;
+    background: #073871;
+    text-align: center;
+    font-size: 32px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+
+  .ask {
+    width: 50%;
+    font-size: 32px;
+    line-height: 70px;
+    text-align: center;
+    color: black;
+  }
+ 
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_main h2 {
+    text-align: center;
+  }
+
+
+  /* /// 온라인 로그인 회원가입 헤더/// */
+  .onlines {
+    width: 50%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #000;
+  }
+  .asks {
+    width: 50%;
+    background: #073871;
+    font-size: 32px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+  }
+ 
+
+  /* //반응형/// */
+@media (max-width: 1024px){
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_head {
+    display: flex;
+    border: 1px solid;
+    line-height: 70px;
+  }
+  .online {
+    width: 50%;
+    background: #073871;
+    text-align: center;
+    font-size: 32px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .ask {
+    width: 50%;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    color: black;
+  }
+  
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_main h2 {
+    text-align: center;
+  }
+  /* /// 온라인 로그인 회원가입 헤더/// */
+  .onlines {
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 70px;
+    text-decoration: none;
+    color: #000;
+  }
+  .asks {
+    width: 50%;
+    background: #073871;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+  }
+
+
+}
+
+@media (max-width: 768px){
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_head {
+    display: flex;
+    border: 1px solid;
+    line-height: 60px;
+  }
+  .online {
+    width: 50%;
+    background: #073871;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .ask {
+    width: 50%;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+  }
+  
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_main h2 {
+    text-align: center;
+  }
+  /* /// 온라인 로그인 회원가입 헤더/// */
+  .onlines {
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+  }
+  .asks {
+    width: 50%;
+    background: #073871;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+  }
+
+}
+@media (max-width: 690px){
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_head {
+    display: flex;
+    border: 1px solid;
+    line-height: 50px;
+  }
+  .online {
+    width: 50%;
+    background: #073871;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .ask {
+    width: 50%;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+  }
+  
+  .rev_onemain h2 {
+    text-align: center;
+  }
+  .rev_main h2 {
+    text-align: center;
+  }
+  /* /// 온라인 로그인 회원가입 헤더/// */
+  .onlines {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+  }
+  .asks {
+    width: 50%;
+    background: #073871;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+  }
+
+}

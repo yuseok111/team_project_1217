@@ -1,0 +1,32 @@
+<div class="nw w1440 pb120">
+  <div id="notice_tab1" class="notice_tabcont nt">
+    <h3 class="pt60 pb30">공지사항</h3>
+    <form action="/notice-writememo-edit" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="id" value="<%= row.id %>">
+      <div class="nw-write-wrap">
+        <div class="ul-tr-list">
+          <div class="ul-td nw-title">제목</div>
+          <div class="ul-td nw-cont"><input type="text" name="notice-title" value="<%= row.noticetitle %>"></div>
+        </div>
+        <div class="ul-tr-list">
+          <div class="ul-td nw-title">내용</div>
+          <div class="ul-td nw-cont" style="white-space:pre-wrap ;"><textarea name="notice-cont" id="" cols="60"
+              rows="30"><%= row.noticecont %>
+          </textarea></div>
+        </div>
+        <div class="ul-tr-list">
+          <div class="ul-td nw-title">파일첨부</div>
+          <div class="ul-td nw-cont">
+            <input type="file" style="display:none ;" id="file-input" name="noticefile"><label for="file-input"
+              style="cursor: pointer;"><img src="img/filedown.png" alt="파일첨부">파일첨부</label>
+            <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+          </div>
+        </div>
+      </div>
+      <div class="notice-write">
+        <p class="nw-white">임시저장</p>
+        <input type="submit" value="작성하기">
+      </div>
+    </form>
+  </div>
+</div>

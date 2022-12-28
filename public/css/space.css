@@ -1,0 +1,319 @@
+.space_main h2{
+  text-align: center;
+}
+/* 미술관시설 텍스트박스 */
+.facility_text h3{
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.facility_text p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.facility_text p:last-child{
+  margin-bottom: 0px;
+}
+/* 미술관시설 층별 지도 */
+.floor_map_wrap{
+  margin-top: 60px;
+}
+.floor_map1{
+  position: relative;
+  opacity: 0;
+  left: -100%; top:0;
+}
+.floor_map2{
+  margin: 40px 0;
+  position: relative;
+  opacity: 0;
+  left: -100%; top:0;
+}
+.floor_map3{
+  position: relative;
+  opacity: 0;
+  left: -100%; top:0;
+}
+.floor_num_box{
+  width: 200px;
+  height: 70px;
+  background-color: #073871;
+}
+.floor_num_box>h3{
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+}
+.floor_imgs{
+  padding: 60px 0;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.floor_img{
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+}
+.floor_img1{
+  background-image: url(../img/b1.png);
+}
+.floor_img2{
+  background-image: url(../img/f1.png);
+}
+.floor_img3{
+  background-image: url(../img/f2.png);
+}
+
+/* 지도 위치 넘버 */
+.floor_img_area_num ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.floor_img_area_num ul li{
+  font-size: 18px;
+  margin-right: 100px;
+}
+.floor_img_area_num ul li:last-child{
+  margin-right: 0;
+}
+.floor_img_area_num ul li span{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #073871;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+/* 미술관대관안내 텍스트박스 */
+.rental_text{
+  margin-top: 60px;
+}
+.rental_text h3{
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+/* 강의실,전시실 대관 */
+.rental_text p{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.rental_text p:last-child{
+  margin-bottom: 0px;
+}
+.rental_manu{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.rental_manu li{
+  margin-right: 50px;
+}
+.rental_manu li:last-child{
+  margin-right: 0px;
+}
+.rental_manu_noti{
+  color: #777;
+}
+/* 전시실 */
+.exhibition_room{
+  margin-top: 40px;
+}
+
+/* 미디어쿼리 */
+@media (max-width:1440px) {
+  /* 지도 위치 넘버 */
+  .floor_img_area_num ul li{
+    margin-right: 50px;
+  } 
+}
+@media (max-width:1024px) {
+  /* 미술관시설 텍스트박스 */
+  .facility_text h3{
+    font-size: 25px;
+  }
+  .facility_text p{
+    font-size: 16px;
+  }
+  /* 미술관시설 층별 지도 */
+  .floor_num_box{
+    width: 150px;
+    height: 50px;
+  }
+  .floor_num_box>h3{
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .floor_imgs{
+    padding: 30px 0;
+  }
+  /* 지도 위치 넘버 */
+  .floor_img_area_num ul li{
+    font-size: 16px;
+  }
+  .floor_img_area_num ul li span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 15px;
+  }
+  /* 미술관대관안내 텍스트박스 */
+  .rental_text h3{
+    font-size: 25px;
+  }
+  /* 강의실,전시실 대관 */
+  .rental_text p{
+    font-size: 20px;
+  }
+  .rental_manu_noti{
+    font-size: 15px;
+  }
+}
+@media (max-width:768px){
+  /* 미술관시설 텍스트박스 */
+  .facility_text h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  /* 미술관시설 층별 지도 */
+  .floor_map_wrap{
+    margin-top: 30px;
+  }
+  .floor_map2{
+    margin: 30px 0;
+  }
+  .floor_num_box>h3{
+    font-size: 20px;
+  }
+  /* 지도 위치 넘버 */
+  .floor_img_area_num ul li{
+    margin-right: 25px;
+  }
+  /* 지도 이미지 */
+  .floor_img{
+    width: 100%;
+    height: 250px;
+  }
+  /* 미술관대관안내 텍스트박스 */
+  .rental_text{
+    margin-top: 30px;
+  }
+  .rental_text h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  /* 강의실,전시실 대관 */
+  .rental_text p{
+    font-size: 18px;
+  }
+  .rental_manu_noti{
+    font-size: 14px;
+  }
+  /* 전시실 */
+  .exhibition_room{
+    margin-top: 30px;
+  }
+}
+@media (max-width:690px){
+  /* 미술관시설 텍스트박스 */
+  .facility_text h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .facility_text p{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+   /* 미술관시설 층별 지도 */
+  .floor_map_wrap{
+  margin-top: 20px;
+  }
+  .floor_map2{
+    margin: 20px 0;
+  }
+  .floor_num_box{
+    width: 100px;
+  }
+  .floor_num_box>h3{
+    font-size: 16px;
+  }
+  .floor_imgs{
+    padding: 0 0 20px;
+  }
+  /* 지도 위치 넘버 */
+  .floor_img_area_num ul li{
+    font-size: 14px;
+    margin-right: 0;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .area_num1 ul li{
+    margin-bottom: 0;
+  }
+  .area_num2 ul li:last-child{
+    margin-bottom: 0;
+    width: 100%;
+  } 
+  .area_num3 ul li:nth-child(3){
+    margin-bottom: 0;
+  }
+  .area_num3 ul li:nth-child(4){
+    margin-bottom: 0;
+  }
+  .floor_img_area_num ul li span{
+    margin-right: 10px;
+  }
+  /* 미술관대관안내 텍스트박스 */
+  .rental_text{
+    margin-top: 20px;
+  }
+  .rental_text h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  /* 강의실,전시실 대관 */
+  .rental_text p{
+  font-size: 15px;
+  margin-bottom: 10px;
+  }
+  .rental_text p:last-child{
+    margin-bottom: 0px;
+  }
+  .rental_manu{
+    margin-bottom: 10px;
+  }
+  .rental_manu li{
+    font-size: 14px;
+    margin-right: 25px;
+  }
+  .rental_manu li:last-child{
+    margin-right: 0px;
+  }
+  .rental_manu_noti{
+    font-size: 12px;
+  }
+  /* 전시실 */
+  .exhibition_room{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:430px){
+  /* 지도 이미지 */
+  .floor_img{
+    height: 200px;
+  }
+  /* 미술관시설 층별 지도 */
+  .floor_num_box{
+    height: 40px;
+  }
+  .floor_num_box>h3{
+    line-height: 40px;
+  }
+}

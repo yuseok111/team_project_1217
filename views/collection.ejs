@@ -1,0 +1,68 @@
+<!-- 소장품 -->
+<section class="collection_main w1440 pb120">
+  <h2 class="pt120 pb120">소장품</h2>
+  <!-- 소장품 서치 박스 -->
+  <form  method="post" action="/collection_search" id="collection_main_form">
+    <select name="collection_search_box" id="collection_search_box">
+      <option value="작가명">작가명</option>
+      <option value="작품명">작품명</option>
+      <option value="제작연도">제작연도</option>
+      <option value="재료">재료</option>
+      <option value="규격">규격</option>
+      <option value="부문">부문</option>
+      <option value="관리번호">관리번호</option>
+      <option value="내용">내용</option>
+    </select>
+    <label for="collection_search_txt"></label>
+    <input type="text" name="collection_search_txt" id="collection_search_txt" placeholder="검색어를 입력해주세요">
+    <input type="submit" value="검색" id="collection_search_check">
+  </form>
+  <!-- 갤러리 -->
+  <div class="collection_gallery_wrap">
+    <p>총 게시물 <span class="red_txt">203</span>개</p>
+    <ul class="collection_gallery">
+      <% rows.forEach((row,index)=>{  %>
+      <li onclick="javascript:location.href='/collection_view?id=<%= row.id %>'">
+        <div class="collection_gallery_cont">
+          <a href="#"><img src="<%= row.img %>" alt="gall"></img></a>
+          <div class="collection_gallery_txt_box">
+            <h5 ><%= row.title %></h5>
+            <div class="gallery_txt_box_top">
+              <p>작가명</p>
+              <span><%= row.writer %></span>
+            </div>
+            <div class="gallery_txt_box_bot">
+              <p>제작연도</p>
+              <span><%= row.collection_year %></span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
+  <!-- 글작성 버튼 -->
+  <div class="collection_write_btn">
+    <button type="button" class="collection_view_emend_btn" onclick="javascript:location.href='collection_write'">글작성</button>
+  </div>
+  <!-- 게시판 paging -->
+  <div class="paging pt120" id="notice-paging">
+    <ul>
+      <li></li>
+      <li></li>
+      <li class="notice-active">1</li>
+      <li class="paging-m">2</li>
+      <li class="paging-m">3</li>
+      <li class="paging-m">4</li>
+      <li class="paging-m">5</li>
+      <li class="paging-m">6</li>
+      <li class="paging-m">7</li>
+      <li class="paging-m">8</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+    <div id="topBtn">TOP</div>
+</section>
+
+<script src="js/collection_view.js"></script>

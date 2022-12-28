@@ -1,0 +1,71 @@
+.artist h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.artist-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist-wrap .artist-img {
+  width: 40%;
+  max-width: 469px;
+}
+
+.artist-wrap .artist-img img {
+  width: 100%;
+}
+
+
+.artist-wrap .artist-txt {
+  width: 55%;
+}
+
+.artist-wrap .artist-txt p {
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.artist-wrap .artist-txt p:last-child{
+  padding-bottom: 0;
+}
+@media (max-width : 1024px) {
+  .artist-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artist-wrap .artist-img {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  .artist-wrap .artist-txt {
+    width: 90%;
+  }
+
+  .artist-wrap .artist-txt p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width : 768px) {
+  .artist h2 {
+    font-size: 32px;
+  }
+
+  .artist-wrap .artist-txt p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width : 690px) {
+  .artist h2 {
+    font-size: 25px;
+  }
+
+  .artist-wrap .artist-txt p {
+    font-size: 16px;
+  }
+}

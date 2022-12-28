@@ -1,0 +1,218 @@
+/* //////////////////////로그인/// */
+@import url(rev_herder_common.css);
+._btn-black {
+  background-color: #073871;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 45px;
+}
+._btn-white {
+  background-color: #fff;
+  width: 50%;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  line-height: 45px;
+}
+.btn_box {
+  display: flex;
+  border: 1px solid;
+}
+button {
+  border: 0;
+  outline: 0;
+}
+.btn_box > button {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 2;
+}
+.member_case {
+  position: relative;
+  margin: 60px auto 60px;
+  width: 100%;
+  padding-right: 160px;
+  box-sizing: border-box;
+}
+.member_case > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 120px;
+  background: #073871;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+}
+
+.rev_loginMain {
+  width: 50%;
+  margin: 0 auto;
+}
+.rev_login_title {
+  border: solid 1px 1px 1px 0;
+}
+.rev_login_title .titi {
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.rev_login_title p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.member_case input {
+  width: 100%;
+  height: 58px;
+  line-height: 58px;
+  border: 0;
+  border-bottom: solid 1px #e5e5e5;
+  box-sizing: content-box;
+  font-size: 14px;
+}
+/* 1226 */
+.member_case button{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.join_jum {
+  width: 30%;
+  margin: 0 auto;
+}
+.join_jum a {
+  display: block;
+  background-color: #073871;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* 1226끝 */
+@media (max-width: 1024px) {
+  ._btn-black {
+    background-color: #073871;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 45px;
+  }
+  ._btn-white {
+    background-color: #fff;
+    width: 50%;
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  ._btn-black {
+    background-color: #073871;
+
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+  }
+  ._btn-white {
+    background-color: #fff;
+    width: 50%;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .rev_login_title p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    width: 105%;
+  }
+
+  .member_case {
+    flex-direction: column;
+  }
+
+  .member_case > input {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin: 0 auto;
+    height: 49px;
+    line-height: 8px;
+    border: 0;
+    border-bottom: solid 1px #e5e5e5;
+    box-sizing: content-box;
+  }
+  .member_case button {
+    margin-top: 123px;
+    display: block;
+    width: 100%;
+    /* line-height: 3em; */
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    font-weight: bold;
+  }
+  .join_jum {
+    width: 100%;
+  }
+  .join_jum a {
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 40px;
+  }
+
+  .member_case {
+    position: relative;
+    margin: 60px auto 60px;
+    width: 100%;
+    padding-right: 0px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 690px) {
+  ._btn-black {
+    background-color: #073871;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  ._btn-white {
+    background-color: #fff;
+    width: 50%;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .member_case button {
+    font-size: 12px;
+  }
+  .join_jum a{
+    font-size: 12px;
+  }
+
+  .rev_loginMain {
+    width: 80%;
+  }
+}

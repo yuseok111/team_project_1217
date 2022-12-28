@@ -1,0 +1,144 @@
+@import url(common/header.css);
+@import url(common/footer.css);
+@import url(main.css);
+
+html,body {
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  /* height: 100%; */
+  /* overflow-x: hidden; */
+}
+
+.w1440 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left:20px;
+  padding-right:20px;
+  box-sizing: border-box;
+}
+.red_txt {
+  color: #f00;
+}
+/*padding*/
+.pt120 {
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+
+.pb120 {
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+.pt60 {
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.pt30 {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+/*margin*/
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* 미디어 쿼리 */
+@media (max-width:1440px) {
+  .w1440 {
+    max-width: 1024px;
+    /* padding-left:20px;
+    padding-right:20px; */
+    box-sizing: border-box;
+  }
+
+  /* 1204 추가 */
+  .pt120 {
+    padding-top: 120px;
+    box-sizing: border-box;
+  }
+
+  .pb120 {
+    padding-bottom: 120px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width:768px) {
+  .w1440 {
+    max-width: 768px;
+  }
+
+  .pt120 {
+    padding-top: 60px;
+    box-sizing: border-box;
+  }
+
+  .pb120 {
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* 1203 추가 */
+@media (max-width:690px) {
+  .w1440 {
+    max-width: 690px;
+  }
+
+  .pt120 {
+    padding-top: 40px;
+  }
+
+  .pb120 {
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width:430px) {
+  .w1440 {
+    max-width: 430px;
+  }
+
+  .pt60 {
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  .pb60 {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+  
+}

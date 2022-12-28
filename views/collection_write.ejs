@@ -1,0 +1,15 @@
+<!-- 소장품 작성 -->
+<section class="collection_write w1440 pt120 pb120">
+  <form method="post" action="/collection_w" enctype="multipart/form-data">
+    <div>이미지파일<input type="file" name="collection_img" /></div>
+    <div>제목<input type="text" name="collection_name" /></div>
+    <div>작가명<input type="text" name="collection_writer" /></div>
+    <div>제작연도<input type="text" name="collection_year" /></div>
+    <div>
+      내용<textarea name="collection_cont" class="collection_cont s"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="저장" />
+    </div>
+  </form>
+</section>

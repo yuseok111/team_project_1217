@@ -1,0 +1,136 @@
+<section class="w1440 pb120 ">
+  <h2 class="pt120 pb120 ntnt">열린마당</h2>
+  <div class="notice-main-wrap">
+    <ul class="notice_tablist">
+      <li class="notice_tablink1 notice_tab_active" onclick="noticeTabOpen2 (event,'notice_tab1')">공지</li>
+      <li class="notice_tablink1" onclick="noticeTabOpen2(event,'notice_tab2')">교육</li>
+      <li class="notice_tablink1" onclick="noticeTabOpen2(event,'notice_tab3')">언론보도</li>
+    </ul>
+    <div>
+      <div id="notice_tab1" class="notice_tabcont nt">
+        <h3 class="pt60 pb60">공지사항</h3>
+        <div class="ul-tb-box">
+          <div class="ul-tr-head">
+            <div class="ul-td num">번호</div>
+            <div class="ul-td title">제목</div>
+            <div class="ul-td date">작성일자</div>
+            <div class="ul-td count">조회수</div>
+          </div>
+          <div class="ul-tr-list">
+            <!-- 데이터 베이스 연결 하기  지금 추가하는건 예시내용-->
+            <div class="ul-td num">437</div>
+            <div class="ul-td title" onclick="javascript:location.href=`/notice-detail`">[양주시립장욱진미술관] 하반기 문화자원봉사자(도슨트)
+              특별교육 안내
+            </div>
+            <div class="ul-td date">2022.11.10</div>
+            <div class="ul-td count">79</div>
+          </div>
+          <% rows.forEach((row,index)=>{ %>
+          <div class="ul-tr-list">
+            <!-- 데이터 베이스 연결 하기  지금 추가하는건 예시내용-->
+            <div class="ul-td num"><%= row.id %></div>
+            <div class="ul-td title" onclick="javascript:location.href=`/notice-detailM?id=<%=row.id %>`">
+              <%= row.noticetitle %>
+            </div>
+            <div class="ul-td date"><%= row.DATE %></div>
+            <div class="ul-td count"><%= row.noticecount%></div>
+          </div>
+          <% }); %>
+        </div>
+        <div class="notice-write ">
+          <p onclick="javascript:location.href=`/notice-write`">작성하기</p>
+        </div>
+        <div class=" paging pt120" id="notice-paging">
+          <ul>
+            <li></li>
+            <li></li>
+            <li class="notice-active">1</li>
+            <li class="paging-m">2</li>
+            <li class="paging-m">3</li>
+            <li class="paging-m">4</li>
+            <li class="paging-m">5</li>
+            <li class="paging-m">6</li>
+            <li class="paging-m">7</li>
+            <li class="paging-m">8</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div id="notice_tab2" class="notice_tabcont nt">
+        <h3 class="pt60 pb60">교육</h3>
+        <div class="ul-tb-box">
+          <div class="ul-tr-head">
+            <div class="ul-td num">번호</div>
+            <div class="ul-td title">제목</div>
+            <div class="ul-td date">작성일자</div>
+            <div class="ul-td count">조회수</div>
+          </div>
+          <div class="ul-tr-list">
+            <!-- 데이터 베이스 연결 하기  지금 추가하는건 예시내용-->
+            <div class="ul-td num">12</div>
+            <div class="ul-td title">[비대면 프로그램] 작품 앞 드로잉</div>
+            <div class="ul-td date">2022.11.07</div>
+            <div class="ul-td count">39</div>
+          </div>
+        </div>
+        <div class="notice-write ">
+          <p>작성하기</p>
+        </div>
+        <div class="paging pt120" id="notice-paging">
+          <ul>
+            <li></li>
+            <li></li>
+            <li class="notice-active">1</li>
+            <li class="paging-m">2</li>
+            <li class="paging-m">3</li>
+            <li class="paging-m">4</li>
+            <li class="paging-m">5</li>
+            <li class="paging-m">6</li>
+            <li class="paging-m">7</li>
+            <li class="paging-m">8</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div id="notice_tab3" class="notice_tabcont nt">
+        <h3 class="pt60 pb60">언론보도</h3>
+        <div class="ul-tb-box">
+          <div class="ul-tr-head">
+            <div class="ul-td num">번호</div>
+            <div class="ul-td title">제목</div>
+            <div class="ul-td date">작성일자</div>
+            <div class="ul-td count">조회수</div>
+          </div>
+          <div class="ul-tr-list">
+            <!-- 데이터 베이스 연결 하기  지금 추가하는건 예시내용-->
+            <div class="ul-td num">330</div>
+            <div class="ul-td title">[KBS]장욱진, 곽인식, 최상철…근현대 미술 거장 한자리에</div>
+            <div class="ul-td date">2022.11.02</div>
+            <div class="ul-td count">15</div>
+          </div>
+        </div>
+        <div class="notice-write ">
+          <p>작성하기</p>
+        </div>
+        <div class="paging pt120" id="notice-paging">
+          <ul>
+            <li></li>
+            <li></li>
+            <li class="notice-active">1</li>
+            <li class="paging-m">2</li>
+            <li class="paging-m">3</li>
+            <li class="paging-m">4</li>
+            <li class="paging-m">5</li>
+            <li class="paging-m">6</li>
+            <li class="paging-m">7</li>
+            <li class="paging-m">8</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

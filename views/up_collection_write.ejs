@@ -1,0 +1,26 @@
+<!-- 소장품 수정 작성 -->
+<section class=" up_collection_write w1440 pt120 pb120">
+  <form method="post" action="/up_collection_w" enctype="multipart/form-data">
+    <div>
+      아이디<input type="hidden" name="up_collection_id" value="<%= row.id %>">
+    </div>
+    <div>
+      이미지파일<input type="file" name="up_collection_img" value="<%= row.img %>">
+    </div>
+    <div>
+      제목<input type="text" name="up_collection_name" value="<%= row.title %>">
+    </div>
+    <div>
+      작가명<input type="text" name="up_collection_writer" value="<%= row.writer %>">
+    </div>
+    <div>
+      제작연도<input type="text" name="up_collection_year" value="<%= row.collection_year %>">
+    </div>
+    <div>
+      내용<textarea name="up_collection_cont"><%= row.collection_cont %></textarea>
+    </div>
+    <div>
+      <input type="submit" value="저장">
+    </div>
+  </form>
+</section>

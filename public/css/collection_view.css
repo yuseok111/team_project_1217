@@ -1,0 +1,181 @@
+.collection_view_main h2{
+    text-align: center;
+}
+
+/* 갤러리 뷰어 이미지 영역 */
+.collection_view_gallery{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+.collection_view_gallery img{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 갤러리 뷰어 텍스트 영역 */
+.collection_view_gallery_txt{
+  width: 100%;
+  height: auto;
+}
+.collection_view_gallery_txt li{
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+.collection_view_gallery_txt p{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* 수정 삭제 목록 버튼 */
+.collection_view_btns{
+  text-align: right;
+  margin-top: 40px;
+}
+/* 수정버튼 */
+.collection_view_emend_btn,.collection_view_list_btn{
+  width: 80px;
+  height: 40px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #073871;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+/* 삭제버튼 */
+.collection_view_delete_btn{
+  width: 80px;
+  height: 40px;
+  border: 1px solid #073871;
+  padding: 0;
+  margin: 0 10px;
+  background-color: #fff;
+  color: #073871;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 탑버튼 */
+#topBtn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #073871;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  opacity: 0;
+  position: fixed;
+  right: 1%; bottom:0px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+#topBtn.topbtnactive{
+  opacity: 1;
+  bottom:10%;
+}
+
+
+/* 미디어쿼리 */
+@media (max-width:1024px){
+  /* 갤러리 뷰어 텍스트 영역 */
+  .collection_view_gallery_txt p{
+    font-size: 16px;
+  }
+  .collection_view_gallery_txt li{
+    font-size: 15px;
+  }
+  /* 수정버튼 목록버튼 */
+  .collection_view_emend_btn,.collection_view_list_btn{
+    font-size: 15px;
+  }
+  /* 삭제버튼 */
+  .collection_view_delete_btn{
+    font-size: 15px;
+  }
+  /* 탑버튼 */
+  #topBtn{
+    font-size: 15px;
+  }
+}
+@media (max-width:768px){
+  /* 갤러리 뷰어 텍스트 영역 */
+  .collection_view_gallery_txt li{
+    font-size: 14px;
+  }
+  /* 수정 목록버튼 */
+  .collection_view_emend_btn,.collection_view_list_btn{
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+  }
+  /* 삭제버튼 */
+  .collection_view_delete_btn{
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+  }
+  /* 탑버튼 */
+  #topBtn{
+    font-size: 14px;
+  }
+}
+@media (max-width:690px){
+  /* 갤러리 뷰어 이미지 영역 */
+  .collection_view_gallery{
+    margin-bottom: 40px;
+  }
+  /* 갤러리 뷰어 텍스트 영역 */
+  .collection_view_gallery_txt{
+    width: 100%;
+    height: 100%;
+  }
+   /* 갤러리 뷰어 텍스트 영역 */
+   .collection_view_gallery_txt p{
+    font-size: 14px;
+  }
+  .collection_view_gallery_txt li{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  /* 수정 삭제버튼 */
+  .collection_view_btns{
+    margin-top: 20px;
+  }
+  /* 수정 목록 버튼 */
+  .collection_view_emend_btn,.collection_view_list_btn{
+    font-size: 12px;
+  }
+  /* 삭제버튼 */
+  .collection_view_delete_btn{
+    font-size: 12px;
+  }
+  /* 탑버튼 */
+  #topBtn{
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+
+@media (max-width:430px){
+  /* 탑버튼 */
+  #topBtn.topbtnactive{
+    display: none;
+  }
+}

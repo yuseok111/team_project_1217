@@ -1,0 +1,45 @@
+<section class="w1440 nd pb120">
+  <h2 class="pt120 pb120 ntnt">열린마당</h2>
+  <div class="notice-main-wrap">
+    <ul class="notice_tablist">
+      <li class="notice_tablink1 notice_tab_active" onclick="javascript:location.href='/notice-main'">공지</li>
+      <li class="notice_tablink1" onclick="javascript:location.href='/notice-main'">교육</li>
+      <li class="notice_tablink1" onclick="javascript:location.href='/notice-main'">언론보도</li>
+    </ul>
+  </div>
+  <div class="nd">
+    <div id="notice_tab1" class="notice_tabcont nt">
+      <h3 class="pt60 pb30">공지사항</h3>
+      <input type="hidden" name="id" value="<%= row.id %>">
+      <h4><%= row.noticetitle %></h4>
+      <h5><b>작성일</b><%= row.DATE %><b>조회수</b><%= row.noticecount %><b>담당자</b>세계문화부 양희정 (02-2077-9554)</h5>
+      <div class="nd-line mb30 mt30"></div>
+      <div class="nd-p-wrap">
+        <h6 class="nd-p-wrap-title"><%= row.noticetitle %>
+        </h6>
+        <p style="white-space:pre-wrap ;">
+          <%= row.noticecont %></p>
+      </div>
+      <div class="nd-line mt30"></div>
+      <div class="upfs">
+        <h6>파일</h6>
+        <p><%= row.noticefile %><a href="<%= row.noticefile %>" download style="margin-left:15px ;">다운로드</a></p>
+      </div>
+      <div class="notice-write">
+        <p style="margin-right: 30px;" onclick="javascript:location.href='/notice-writememo-e?id=<%=row.id%>'">수정</p>
+        <p style="margin-right: 30px;" onclick="javascript:location.href='/notice-writememo-d?id=<%=row.id%>'">삭제</p>
+        <p onclick="javascript:location.href=`/notice-main`">목록</p>
+      </div>
+      <div class="notice-page-wrap">
+        <div class="notice-pre" onclick="javascript:location.href='/notice-detailMP?id=<%= row.id%>'"><img
+            src="img/notice_arrow_l.png" alt="이전페이지">
+          <p>이전 페이지</p>
+        </div>
+        <div class="notice-nxt" onclick="javascript:location.href='/notice-detailMN?id=<%= row.id%>'"><img
+            src="img/notice_arrow_r.png" alt="다음페이지">
+          <p>다음 페이지</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

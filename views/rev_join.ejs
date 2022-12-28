@@ -1,0 +1,71 @@
+<body>
+    <section class="rev_onemain w1440 pb120">
+        <h2 class="pt120 pb120">회원가입</h2>
+        <div class="rev_head">
+          <a class="onlines" href="rev_main">온라인 예매</a>
+        <a class="asks" href="rev_login">예매내역 조회</a>
+        </div>
+    <div class="members">
+        <div class="list-tabss"><a class="active" href="">회원가입</a></div>
+        <div class="list-contt">
+          <div class="contt">
+            <form id="joinForm" action="/writeJoin" method="post"  onsubmit="return Validation()";>
+              <h3 class="h3-member mt25">아이디</h3>
+              <div class="mb150">
+                <input
+                  class="inp-member"
+                  id="ids"
+                  type="text"
+                  name="ids"
+                  placeholder="아이디을입력하세요"
+                />
+                <div class="checksd">영문 또는 영문, 숫자 조합 (8~12자)</div>
+                <h3 class="h3-member pw">비밀번호</h3>
+                <div class="mb150">
+                  <input
+                    class="inp-member"
+                    id="pw"
+                    type="password"
+                    name="pws"
+                    placeholder="비밀번호을입력하세요"
+                  />
+                  <div class="checksd">비밀번호는 영문, 숫자, 특수문자 중 2가지 이상 조합하여 8-16자리로 설정해주세요.</div>
+                  <h3 class="h3-member " >비밀번호 확인</h3>
+                  <div class=" repw">
+                    <input
+                      class="inp-member"
+                      id="repw"
+                      type="password"
+                      name="repw"
+                      placeholder="비밀번호를 확인해주세요"
+                    />
+                    <div class="checksd">입력하신 비밀번호
+                      정확히 맞게 기입해주세요
+                    </div>
+                    <h3 class="h3-member">메일</h3>
+                    <div class="mb150">
+                      <input
+                        class="inp-member"
+                        id="mail"
+                        type="text"
+                        name="mail"
+                        placeholder="메일을입력하세요"
+                      />
+                      <h3 class="h3-member mt25">이름</h3>
+                      <div class="mb150">
+                        <input
+                          class="inp-member"
+                          id="namin"
+                          type="text"
+                          name="names"
+                          placeholder="이름을입력하세요"
+                        />
+                          <input  class="btn_type0" type="submit" value="완료" >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/rev_join.js"></script>
+</body>

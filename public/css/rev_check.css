@@ -1,0 +1,369 @@
+.basketdiv {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  float: left;
+  font-size: 0.9375em;
+  margin-bottom: 20px;
+}
+.basketdiv .row.head {
+  border-bottom: 2px solid #888;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  font-weight: 500;
+}
+.basketdiv .data {
+  border-bottom: 1px dashed #888;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.basketdiv .data .empty {
+  text-align: center;
+  padding: 12px 0;
+}
+.basketdiv .row.head .subdiv {
+  background-color: #f4f4f4;
+}
+.basketdiv .row > .subdiv {
+  display: block;
+  float: left;
+}
+.basketdiv .row > .subdiv:nth-child(1) {
+  width: 50%;
+}
+.basketdiv .row > .subdiv:nth-child(2) {
+  width: 40%;
+}
+.basketdiv .row > .subdiv:nth-child(3) {
+  width: 10%;
+}
+.basketdiv2 .row > .subdiv:nth-child(1) {
+  width: 60%;
+}
+.basketdiv2 .row > .subdiv:nth-child(2) {
+  width: 40%;
+}
+.basketdiv .row > div > div {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding: 12px 0;
+}
+.basketdiv .row.data > div > div {
+  height: 60px;
+  line-height: 60px;
+}
+
+.basketdiv .data .num .updown {
+  color: #073871;
+  font-size: 23px;
+}
+.basketdiv .check {
+  width: 10%;
+}
+.basketdiv .check input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #073871;
+}
+.basketdiv .img {
+  width: 20%;
+}
+.basketdiv .pname {
+  width: 70%;
+}
+.basketdiv2 .pname {
+  width: 80%;
+}
+.basketdiv .basketprice {
+  width: 33%;
+}
+.basketdiv .num {
+  width: 33%;
+  min-width: 105px;
+}
+.basketdiv .sum {
+  width: 34%;
+  max-width: 80px;
+  color: #0000aa;
+}
+.basketdiv .point {
+  width: 50%;
+}
+.basketdiv2 .basketprice {
+  width: 25%;
+}
+
+.basketdiv2 .num {
+  width: 25%;
+}
+
+.basketdiv2 .sum {
+  width: 25%;
+  color: #0000aa;
+}
+
+.basketdiv2 .point {
+  width: 25%;
+}
+.basketdiv .basketcmd {
+  width: 100%;
+}
+.basketdiv .data .pname {
+  text-align: left !important;
+  line-height: 83px !important;
+}
+.basketdiv .data .price,
+.basketdiv .data .sum,
+.basketdiv .data .point {
+  text-align: right;
+}
+.baseform > tbody > tr > td:first-child {
+  width: 100px;
+}
+
+.buttongroup {
+  padding: 11px 0;
+  margin: 50px 0;
+}
+.narrowbuttongroup {
+  margin: 15px 0;
+}
+.buttongroup.center {
+  text-align: center;
+}
+.buttongroup input[type="text"],
+.buttongroup input[type="password"] {
+  height: 30px;
+}
+.buttongroup button,
+.buttongroup a {
+  margin-right: 5px;
+  font-size: 24px;
+}
+.buttongroup button:last-child,
+.buttongroup a:last-child {
+  margin-right: 0;
+}
+
+.abutton,
+.abutton:link,
+.abutton:visited,
+.abutton:active,
+input[type="button"] {
+  background-color: #383838;
+  border: 1px solid #888888;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: -1px;
+  padding: 3px 5px;
+  margin: 2px 3px;
+  width: auto;
+  word-break: keep-all;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.abutton-alt {
+  background-color: #d3e2c6;
+}
+
+.red {
+  color: #b00;
+}
+.blue {
+  color: #073871;
+}
+.basketrowcmd,
+.sumcount,
+.summoney {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.sumcount,
+.summoney {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.buttongroup {
+  text-align: center;
+}
+.buttongroup a {
+  text-decoration: none;
+}
+.cmd a,
+.cmd span {
+  padding: 12px 30px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #000;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+.cmd.small a,
+.cmd.small span {
+  padding: 6px 20px;
+  font-size: 0.8125em;
+}
+
+.orderform .p_num {
+  text-align: right;
+  width: 40px;
+  font-size: 1em;
+}
+
+@media (max-width: 1440px) {
+  .w1440 {
+    max-width: 1024px;
+    /* padding-left:20px;
+      padding-right:20px; */
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .basketdiv .data .num .updown {
+    font-size: 18px;
+  }
+  .basketdiv .row.data > div > div {
+    font-size: 14px;
+  }
+  .basketdiv .data .pname {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .buttongroup button,
+  .buttongroup a {
+    font-size: 20px;
+  }
+  .fa-arrow-alt-circle-up:before {
+    content: "\f35b";
+    padding-right: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .w1440 {
+    max-width: 768px;
+  }
+
+  .basketdiv .row.data > div > div {
+    font-size: 14px;
+  }
+  .basketdiv .data .num .updown {
+    font-size: 18px;
+  }
+  .sumcount,
+  .summoney {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .basketdiv .row > div > div {
+    font-size: 14px;
+  }
+  .basketdiv .pname {
+    width: 40%;
+  }
+  .basketdiv .row > .subdiv:nth-child(1) {
+    width: 30%;
+  }
+  .basketdiv .row > .subdiv:nth-child(2) {
+    width: 60%;
+  }
+  .subdiv .check {
+    display: none;
+  }
+  .basketdiv .check {
+    width: 33%;
+  }
+  .basketdiv .pname {
+    display: none !important;
+  }
+  .buttongroup button,
+  .buttongroup a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 690px) {
+  .basketdiv .row > .subdiv:nth-child(1) {
+    width: 25%;
+  }
+  .basketdiv .basketprice {
+    width: 25%;
+  }
+  .basketdiv .row > .subdiv:nth-child(2) {
+    width: 65%;
+  }
+  .basketdiv .img {
+    width: 50%;
+  }
+
+  .sumcount,
+  .summoney {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .basketdiv .data .num .updown {
+    font-size: 16px;
+  }
+
+  .abutton,
+  .abutton:link,
+  .abutton:visited,
+  .abutton:active,
+  input[type="button"] {
+    font-size: 12px;
+  }
+  .buttongroup button,
+  .buttongroup a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 416px) {
+  .basketdiv .sum {
+    width: 28%;
+  }
+}
+@media (max-width: 400px) {
+  .basketdiv .row > .subdiv:nth-child(1) {
+    width: 77%;
+  }
+  .row.head {
+    display: none;
+  }
+}
+@media (max-width: 394px) {
+  .basketdiv .row > .subdiv:nth-child(2) {
+    width: 75%;
+  }
+  .buttongroup button,
+  .buttongroup a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 344px) {
+  .basketdiv .row > .subdiv:nth-child(2) {
+    width: 81%;
+  }
+}
+@media (max-width: 314px) {
+  .basketdiv .basketprice {
+    width: 39% !important;
+  }
+  .basketdiv .sum {
+    width: 33%;
+  }
+  .basketdiv .row > .subdiv:nth-child(1) {
+    width: 89%;
+  }
+
+  /* 1226 */
+  .basketdiv .row.data > div > div {
+    height: 100%;
+    line-height: 100%;
+  }
+  /* 1226 */
+}

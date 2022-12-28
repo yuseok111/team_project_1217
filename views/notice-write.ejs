@@ -1,0 +1,40 @@
+<section class="w1440 nd pb120">
+  <h2 class="pt120 pb120 ntnt">열린마당</h2>
+  <div class="notice-main-wrap">
+    <ul class="notice_tablist">
+      <li class="notice_tablink1 notice_tab_active" onclick="javascript:location.href='/notice-main'">공지</li>
+      <li class="notice_tablink1" onclick="javascript:location.href='/notice-main'">교육</li>
+      <li class="notice_tablink1" onclick="javascript:location.href='/notice-main'">언론보도</li>
+    </ul>
+  </div>
+  <div class="nw">
+    <div id="notice_tab1" class="notice_tabcont nt">
+      <h3 class="pt60 pb30">공지사항</h3>
+      <form action="/notice-writememo" method="post" enctype="multipart/form-data">
+        <div class="nw-write-wrap">
+          <div class="ul-tr-list">
+            <div class="ul-td nw-title">제목</div>
+            <div class="ul-td nw-cont"><input type="text" name="notice-title"></div>
+          </div>
+          <div class="ul-tr-list">
+            <div class="ul-td nw-title">내용</div>
+            <div class="ul-td nw-cont" style="white-space:pre-wrap ;"><textarea name="notice-cont" id="" cols="60"
+                rows="30"></textarea></div>
+          </div>
+          <div class="ul-tr-list">
+            <div class="ul-td nw-title">파일첨부</div>
+            <div class="ul-td nw-cont">
+              <input type="file" style="display:none ;" id="file-input" name="noticefile"><label for="file-input"
+                style="cursor: pointer;"><img src="img/filedown.png" alt="파일첨부">파일첨부</label>
+              <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+            </div>
+          </div>
+        </div>
+        <div class="notice-write">
+          <p class="nw-white">임시저장</p>
+          <input type="submit" value="작성하기">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

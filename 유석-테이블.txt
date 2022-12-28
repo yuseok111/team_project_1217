@@ -1,0 +1,15 @@
+///////
+회원가입 db 테이블
+
+ 스키마  team_bogo
+
+CREATE TABLE bogo_join(  
+    ids VARCHAR(80) PRIMARY KEY ,
+    pws VARCHAR(255),
+    repw VARCHAR(255),
+    mail VARCHAR(255),
+    names VARCHAR(255)
+) COMMENT '';
+
+///////////////////
+로그인 db 연결  로그인하면 내역조회 페이지로 넘어감
