@@ -13,3 +13,28 @@ CREATE TABLE bogo_join(
 
 ///////////////////
 로그인 db 연결  로그인하면 내역조회 페이지로 넘어감
+
+
+
+CREATE TABLE seen_join (  
+   birth int(80)  ,
+   names VARCHAR(255),
+    ids VARCHAR(255) PRIMARY KEY ,
+   pws VARCHAR(255),
+    repws VARCHAR(255)
+) COMMENT '';
+
+
+CREATE TABLE seen_notice(  
+   create_time VARCHAR(80) PRIMARY KEY ,
+   name VARCHAR(255),
+    title VARCHAR(255),
+   content VARCHAR(255)
+) COMMENT '';
+
+CREATE TABLE movie_for(  
+   create_time VARCHAR(80) PRIMARY KEY ,
+   img BLOB(255),
+    name VARCHAR(255),
+   tag VARCHAR(255)
+) COMMENT '';
